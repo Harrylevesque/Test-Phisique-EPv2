@@ -11,40 +11,40 @@ function renderActivities() {
         div.innerHTML = `
             <div class="activity-header">
                 <strong>${activity.name}</strong>
-                <button class="remove-btn" onclick="removeActivity(${idx})">Remove</button>
+                <button class="remove-btn" onclick="removeActivity(${idx})">Supprimer</button>
             </div>
-            <button onclick="toggleCriteriaForm(${idx})" style="margin:10px 0;">${activity.showCriteriaForm ? 'Hide' : 'Add/Modify Criteria'}</button>
+            <button onclick="toggleCriteriaForm(${idx})" style="margin:10px 0;">${activity.showCriteriaForm ? 'Cacher' : 'Ajouter/Modifier Critères'}</button>
             <div id="criteria-form-${idx}" style="display:${activity.showCriteriaForm ? 'block' : 'none'};margin-bottom:10px;">
                 <form onsubmit="addCriteria(event,${idx})" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
                     <select name="gender" required>
-                        <option value="">Gender</option>
-                        <option value="Boy">Boy</option>
-                        <option value="Girl">Girl</option>
+                        <option value="">Sexe</option>
+                        <option value="Boy">Garçon</option>
+                        <option value="Girl">Fille</option>
                     </select>
-                    <input type="number" name="age" min="1" max="120" placeholder="Age" required style="width:70px;">
-                    <input type="text" name="criteria" placeholder="Criteria (e.g. Pushups)" required style="width:120px;">
-                    <button type="submit">Add Criteria</button>
+                    <input type="number" name="age" min="1" max="120" placeholder="Âge" required style="width:70px;">
+                    <input type="text" name="criteria" placeholder="Critère (ex: Pushups)" required style="width:120px;">
+                    <button type="submit">Ajouter Critère</button>
                 </form>
             </div>
             <div class="event-list">
                 ${activity.criteria.map((crit, cidx) => `
                     <div class="event">
-                        <strong>${crit.criteria} (${crit.gender}, Age ${crit.age})</strong> <span style="color:#888;font-size:0.95em;">[Max: ${crit.maxScore}]</span>
-                        <button class="remove-btn" onclick="removeCriteria(${idx},${cidx})">Remove</button>
-                        <button onclick="toggleScaleForm(${idx},${cidx})" style="margin-left:8px;">${crit.showScaleForm ? 'Hide' : 'Add/Modify Blocks'}</button>
+                        <strong>${crit.criteria} (${crit.gender === 'Boy' ? 'Garçon' : 'Fille'}, Âge ${crit.age})</strong> <span style="color:#888;font-size:0.95em;">[Max: ${crit.maxScore}]</span>
+                        <button class="remove-btn" onclick="removeCriteria(${idx},${cidx})">Supprimer</button>
+                        <button onclick="toggleScaleForm(${idx},${cidx})" style="margin-left:8px;">${crit.showScaleForm ? 'Cacher' : 'Ajouter/Modifier Blocs'}</button>
                         <div id="scale-form-${idx}-${cidx}" style="display:${crit.showScaleForm ? 'block' : 'none'};margin-top:6px;">
                             <form onsubmit="addScaleBlock(event,${idx},${cidx})" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
-                                <input type="number" name="min" placeholder="Min score" required style="width:70px;">
-                                <input type="number" name="max" placeholder="Max score" required style="width:70px;">
-                                <input type="number" name="points" placeholder="Points for this block" required style="width:110px;">
-                                <button type="submit">Add Block</button>
+                                <input type="number" name="min" placeholder="Score min" required style="width:70px;">
+                                <input type="number" name="max" placeholder="Score max" required style="width:70px;">
+                                <input type="number" name="points" placeholder="Points pour ce bloc" required style="width:110px;">
+                                <button type="submit">Ajouter Bloc</button>
                             </form>
                         </div>
                         <div class="block-list">
                             ${crit.scale.map((block, bidx) => `
                                 <div class="block">
                                     Score ${block.min} - ${block.max} → ${block.points} pts
-                                    <button class="remove-btn" onclick="removeScaleBlock(${idx},${cidx},${bidx})">Remove</button>
+                                    <button class="remove-btn" onclick="removeScaleBlock(${idx},${cidx},${bidx})">Supprimer</button>
                                 </div>
                             `).join('')}
                         </div>
@@ -150,7 +150,7 @@ uploadInput.onchange = function(e) {
             activities = JSON.parse(evt.target.result);
             renderActivities();
         } catch (err) {
-            alert('Invalid JSON file.');
+            alert('Fichier JSON invalide.');
         }
     };
     reader.readAsText(file);

@@ -27,12 +27,12 @@ uploadInput.onchange = function(e) {
                     ages.add(c.age);
                 });
             });
-            userGenderSelect.innerHTML = '<option value="">Select Gender</option>' + Array.from(genders).map(g => `<option value="${g}">${g}</option>`).join('');
-            userAgeSelect.innerHTML = '<option value="">Select Age</option>' + Array.from(ages).sort((a,b)=>a-b).map(a => `<option value="${a}">${a}</option>`).join('');
+            userGenderSelect.innerHTML = '<option value="">Sélectionner le sexe</option>' + Array.from(genders).map(g => `<option value="${g}">${g === 'Boy' ? 'Garçon' : 'Fille'}</option>`).join('');
+            userAgeSelect.innerHTML = '<option value="">Sélectionner l\'âge</option>' + Array.from(ages).sort((a,b)=>a-b).map(a => `<option value="${a}">${a}</option>`).join('');
             userForm.style.display = '';
             gradingSection.innerHTML = '';
         } catch (err) {
-            alert('Invalid JSON file.');
+            alert('Fichier JSON invalide.');
         }
     };
     reader.readAsText(file);
@@ -40,10 +40,10 @@ uploadInput.onchange = function(e) {
 
 startBtn.onclick = function(e) {
     e.preventDefault();
-    userGender = userGenderSelect.value;
+    userGender = userGenderSelect.value === 'Garçon' ? 'Boy' : (userGenderSelect.value === 'Fille' ? 'Girl' : userGenderSelect.value);
     userAge = parseInt(userAgeSelect.value, 10);
     if (!userGender || isNaN(userAge)) {
-        alert('Please select gender and age.');
+        alert('Veuillez sélectionner le sexe et l\'âge.');
         return;
     }
     showGradingInputs();
@@ -58,13 +58,13 @@ function showGradingInputs() {
         // Find the matching criteria for this user
         const crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
         if (!crit) return;
-        html += `<div class="activity"><strong>${act.name}</strong> <span style="color:#888;font-size:0.95em;">[${crit.criteria}]</span><br>Max: ${crit.maxScore}<br>`;
-        html += `<input type="number" name="grade-${aidx}" min="0" max="${crit.maxScore}" placeholder="Enter your score" required style="width:120px;">`;
+        html += `<div class="activity"><strong>${act.name}</strong> <span style="color:#888;font-size:0.95em;">[${crit.criteria}]</span><br>Max : ${crit.maxScore}<br>`;
+        html += `<input type="number" name="grade-${aidx}" min="0" max="${crit.maxScore}" placeholder="Entrez votre score" required style="width:120px;">`;
         html += `<span id="block-result-${aidx}" style="margin-left:10px;color:#007bff;"></span>`;
         html += '</div>';
         totalPossible += crit.scale.reduce((acc, b) => acc + b.points, 0);
     });
-    html += '<button type="submit">Calculate</button></form>';
+    html += '<button type="submit">Calculer</button></form>';
     gradingSection.innerHTML = html;
     document.getElementById('grading-form').onsubmit = function(e) {
         e.preventDefault();
@@ -79,14 +79,14 @@ function showGradingInputs() {
                 foundBlock = crit.scale.find(b => val >= b.min && val <= b.max);
                 if (foundBlock) {
                     total += foundBlock.points;
-                    document.getElementById(`block-result-${aidx}`).textContent = `Block: ${foundBlock.min}-${foundBlock.max} → ${foundBlock.points} pts`;
+                    document.getElementById(`block-result-${aidx}`).textContent = `Bloc : ${foundBlock.min}-${foundBlock.max} → ${foundBlock.points} pts`;
                 } else {
-                    document.getElementById(`block-result-${aidx}`).textContent = 'No block';
+                    document.getElementById(`block-result-${aidx}`).textContent = 'Aucun bloc';
                 }
             }
             totalBlocks += crit.scale.reduce((acc, b) => acc + b.points, 0);
         });
         let percent = totalBlocks ? ((total / totalBlocks) * 100).toFixed(2) : '0.00';
-        gradingSection.innerHTML += `<div style="margin-top:20px;font-size:1.2em;"><strong>Total: ${total} / ${totalBlocks} pts (${percent}%)</strong></div>`;
+        gradingSection.innerHTML += `<div style="margin-top:20px;font-size:1.2em;"><strong>Total : ${total} / ${totalBlocks} pts (${percent}%)</strong></div>`;
     };
 }
