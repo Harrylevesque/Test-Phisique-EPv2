@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grading System Creator</h1>
+        <button id="download-btn" style="margin-bottom:20px;">Download Data</button>
+        <input type="file" id="upload-json" accept="application/json" style="margin-bottom:20px;">
+        <form id="activity-form">
+            <input type="text" id="activity-name" placeholder="Activity Name" required>
+            <button type="submit">Add Activity</button>
+        </form>
+        <div id="activities-list"></div>
+    </div>
+    <script src="creation.js"></script>
+</body>
+</html>
