@@ -155,6 +155,6 @@ uploadInput.onchange = function(e) {
     };
     reader.readAsText(file);
 };
-
+//test
 // Initial render
 renderActivities();
