@@ -1,0 +1,416 @@
+[
+  {
+    "name": "Flexibilité",
+    "criteria": [
+      {
+        "gender": "Girl",
+        "age": 12,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 13,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 14,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 15,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 16,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 17,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 12,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 13,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 14,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 15,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 16,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 17,
+        "criteria": "flexibilité",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 6,
+            "points": 6
+          },
+          {
+            "min": 7,
+            "max": 7,
+            "points": 7
+          },
+          {
+            "min": 8,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 9,
+            "max": 9,
+            "points": 9
+          },
+          {
+            "min": 10,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      }
+    ],
+    "showCriteriaForm": true
+  }
+]

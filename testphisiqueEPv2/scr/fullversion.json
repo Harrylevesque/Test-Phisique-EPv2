@@ -1,32 +1,61 @@
 [
   {
-    "name": "Course d'endurance (1600 m)",
+    "name": "Endurance",
     "criteria": [
       {
         "gender": "Girl",
         "age": 12,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Course de 600m",
+        "maxScore": 300,
         "scale": [
           {
-            "min": null,
-            "max": "8:30",
-            "points": 10
+            "min": 180,
+            "max": 240,
+            "points": 7
           },
           {
-            "min": "8:31",
-            "max": "10:00",
-            "points": 9
-          },
-          {
-            "min": "10:01",
-            "max": "11:00",
+            "min": 241,
+            "max": 270,
             "points": 8
           },
           {
-            "min": "11:01",
-            "max": "12:00",
+            "min": 271,
+            "max": 290,
+            "points": 9
+          },
+          {
+            "min": 291,
+            "max": 300,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 13,
+        "criteria": "Course de 600m",
+        "maxScore": 300,
+        "scale": [
+          {
+            "min": 180,
+            "max": 240,
             "points": 7
+          },
+          {
+            "min": 241,
+            "max": 270,
+            "points": 8
+          },
+          {
+            "min": 271,
+            "max": 290,
+            "points": 9
+          },
+          {
+            "min": 291,
+            "max": 300,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -34,57 +63,28 @@
       {
         "gender": "Boy",
         "age": 12,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Course de 600m",
+        "maxScore": 300,
         "scale": [
           {
-            "min": null,
-            "max": "8:00",
-            "points": 10
+            "min": 180,
+            "max": 240,
+            "points": 7
           },
           {
-            "min": "8:01",
-            "max": "9:30",
-            "points": 9
-          },
-          {
-            "min": "9:31",
-            "max": "10:30",
+            "min": 241,
+            "max": 270,
             "points": 8
           },
           {
-            "min": "10:31",
-            "max": "11:30",
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 13,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": "8:00",
-            "points": 10
-          },
-          {
-            "min": "8:01",
-            "max": "9:30",
+            "min": 271,
+            "max": 290,
             "points": 9
           },
           {
-            "min": "9:31",
-            "max": "10:30",
-            "points": 8
-          },
-          {
-            "min": "10:31",
-            "max": "11:30",
-            "points": 7
+            "min": 291,
+            "max": 300,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -92,28 +92,28 @@
       {
         "gender": "Boy",
         "age": 13,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Course de 600m",
+        "maxScore": 300,
         "scale": [
           {
-            "min": null,
-            "max": "7:30",
-            "points": 10
+            "min": 180,
+            "max": 240,
+            "points": 7
           },
           {
-            "min": "7:31",
-            "max": "9:00",
-            "points": 9
-          },
-          {
-            "min": "9:01",
-            "max": "10:00",
+            "min": 241,
+            "max": 270,
             "points": 8
           },
           {
-            "min": "10:01",
-            "max": "11:00",
-            "points": 7
+            "min": 271,
+            "max": 290,
+            "points": 9
+          },
+          {
+            "min": 291,
+            "max": 300,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -121,28 +121,57 @@
       {
         "gender": "Girl",
         "age": 14,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Course de 800m",
+        "maxScore": 400,
         "scale": [
           {
-            "min": null,
-            "max": "8:00",
-            "points": 10
+            "min": 240,
+            "max": 320,
+            "points": 7
           },
           {
-            "min": "8:01",
-            "max": "9:30",
-            "points": 9
-          },
-          {
-            "min": "9:31",
-            "max": "10:30",
+            "min": 321,
+            "max": 360,
             "points": 8
           },
           {
-            "min": "10:31",
-            "max": "11:30",
+            "min": 361,
+            "max": 380,
+            "points": 9
+          },
+          {
+            "min": 381,
+            "max": 400,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 15,
+        "criteria": "Course de 800m",
+        "maxScore": 400,
+        "scale": [
+          {
+            "min": 240,
+            "max": 320,
             "points": 7
+          },
+          {
+            "min": 321,
+            "max": 360,
+            "points": 8
+          },
+          {
+            "min": 361,
+            "max": 380,
+            "points": 9
+          },
+          {
+            "min": 381,
+            "max": 400,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -150,57 +179,28 @@
       {
         "gender": "Boy",
         "age": 14,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Course de 800m",
+        "maxScore": 400,
         "scale": [
           {
-            "min": null,
-            "max": "7:00",
-            "points": 10
+            "min": 240,
+            "max": 320,
+            "points": 7
           },
           {
-            "min": "7:01",
-            "max": "8:30",
-            "points": 9
-          },
-          {
-            "min": "8:31",
-            "max": "9:30",
+            "min": 321,
+            "max": 360,
             "points": 8
           },
           {
-            "min": "9:31",
-            "max": "10:30",
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 15,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": "7:30",
-            "points": 10
-          },
-          {
-            "min": "7:31",
-            "max": "9:00",
+            "min": 361,
+            "max": 380,
             "points": 9
           },
           {
-            "min": "9:01",
-            "max": "10:00",
-            "points": 8
-          },
-          {
-            "min": "10:01",
-            "max": "11:00",
-            "points": 7
+            "min": 381,
+            "max": 400,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -208,28 +208,28 @@
       {
         "gender": "Boy",
         "age": 15,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Course de 800m",
+        "maxScore": 400,
         "scale": [
           {
-            "min": null,
-            "max": "6:30",
-            "points": 10
+            "min": 240,
+            "max": 320,
+            "points": 7
           },
           {
-            "min": "6:31",
-            "max": "8:00",
-            "points": 9
-          },
-          {
-            "min": "8:01",
-            "max": "9:00",
+            "min": 321,
+            "max": 360,
             "points": 8
           },
           {
-            "min": "9:01",
-            "max": "10:00",
-            "points": 7
+            "min": 361,
+            "max": 380,
+            "points": 9
+          },
+          {
+            "min": 381,
+            "max": 400,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -237,57 +237,28 @@
       {
         "gender": "Girl",
         "age": 16,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Course de 800m",
+        "maxScore": 400,
         "scale": [
           {
-            "min": null,
-            "max": "7:30",
-            "points": 10
+            "min": 240,
+            "max": 320,
+            "points": 7
           },
           {
-            "min": "7:31",
-            "max": "9:00",
-            "points": 9
-          },
-          {
-            "min": "9:01",
-            "max": "10:00",
+            "min": 321,
+            "max": 360,
             "points": 8
           },
           {
-            "min": "10:01",
-            "max": "11:00",
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 16,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": "6:30",
-            "points": 10
-          },
-          {
-            "min": "6:31",
-            "max": "8:00",
+            "min": 361,
+            "max": 380,
             "points": 9
           },
           {
-            "min": "8:01",
-            "max": "9:00",
-            "points": 8
-          },
-          {
-            "min": "9:01",
-            "max": "10:00",
-            "points": 7
+            "min": 381,
+            "max": 400,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -295,28 +266,57 @@
       {
         "gender": "Girl",
         "age": 17,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Course de 800m",
+        "maxScore": 400,
         "scale": [
           {
-            "min": null,
-            "max": "7:30",
-            "points": 10
+            "min": 240,
+            "max": 320,
+            "points": 7
           },
           {
-            "min": "7:31",
-            "max": "9:00",
-            "points": 9
-          },
-          {
-            "min": "9:01",
-            "max": "10:00",
+            "min": 321,
+            "max": 360,
             "points": 8
           },
           {
-            "min": "10:01",
-            "max": "11:00",
+            "min": 361,
+            "max": 380,
+            "points": 9
+          },
+          {
+            "min": 381,
+            "max": 400,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 16,
+        "criteria": "Course de 800m",
+        "maxScore": 400,
+        "scale": [
+          {
+            "min": 240,
+            "max": 320,
             "points": 7
+          },
+          {
+            "min": 321,
+            "max": 360,
+            "points": 8
+          },
+          {
+            "min": 361,
+            "max": 380,
+            "points": 9
+          },
+          {
+            "min": 381,
+            "max": 400,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -324,28 +324,28 @@
       {
         "gender": "Boy",
         "age": 17,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Course de 800m",
+        "maxScore": 400,
         "scale": [
           {
-            "min": null,
-            "max": "6:30",
-            "points": 10
+            "min": 240,
+            "max": 320,
+            "points": 7
           },
           {
-            "min": "6:31",
-            "max": "8:00",
-            "points": 9
-          },
-          {
-            "min": "8:01",
-            "max": "9:00",
+            "min": 321,
+            "max": 360,
             "points": 8
           },
           {
-            "min": "9:01",
-            "max": "10:00",
-            "points": 7
+            "min": 361,
+            "max": 380,
+            "points": 9
+          },
+          {
+            "min": 381,
+            "max": 400,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -354,33 +354,62 @@
     "showCriteriaForm": true
   },
   {
-    "name": "Course de 50 m",
+    "name": "Flexibilité",
     "criteria": [
       {
         "gender": "Girl",
         "age": 12,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
         "scale": [
           {
-            "min": null,
-            "max": 8.4,
-            "points": 10
+            "min": 0,
+            "max": 10,
+            "points": 7
           },
           {
-            "min": 8.5,
-            "max": 8.6,
-            "points": 9
-          },
-          {
-            "min": 8.7,
-            "max": 9.2,
+            "min": 11,
+            "max": 20,
             "points": 8
           },
           {
-            "min": 9.3,
-            "max": 10.2,
+            "min": 21,
+            "max": 28,
+            "points": 9
+          },
+          {
+            "min": 29,
+            "max": 30,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 13,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
+        "scale": [
+          {
+            "min": 0,
+            "max": 10,
             "points": 7
+          },
+          {
+            "min": 11,
+            "max": 20,
+            "points": 8
+          },
+          {
+            "min": 21,
+            "max": 28,
+            "points": 9
+          },
+          {
+            "min": 29,
+            "max": 30,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -388,57 +417,28 @@
       {
         "gender": "Boy",
         "age": 12,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
         "scale": [
           {
-            "min": null,
-            "max": 8.1,
-            "points": 10
+            "min": 0,
+            "max": 10,
+            "points": 7
           },
           {
-            "min": 8.2,
-            "max": 8.4,
-            "points": 9
-          },
-          {
-            "min": 8.5,
-            "max": 8.8,
+            "min": 11,
+            "max": 20,
             "points": 8
           },
           {
-            "min": 8.9,
-            "max": 9.7,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 13,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 8.0,
-            "points": 10
-          },
-          {
-            "min": 8.1,
-            "max": 8.2,
+            "min": 21,
+            "max": 28,
             "points": 9
           },
           {
-            "min": 8.3,
-            "max": 8.7,
-            "points": 8
-          },
-          {
-            "min": 8.8,
-            "max": 9.5,
-            "points": 7
+            "min": 29,
+            "max": 30,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -446,28 +446,28 @@
       {
         "gender": "Boy",
         "age": 13,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
         "scale": [
           {
-            "min": null,
-            "max": 7.7,
-            "points": 10
+            "min": 0,
+            "max": 10,
+            "points": 7
           },
           {
-            "min": 7.8,
-            "max": 7.9,
-            "points": 9
-          },
-          {
-            "min": 8.0,
-            "max": 8.4,
+            "min": 11,
+            "max": 20,
             "points": 8
           },
           {
-            "min": 8.5,
-            "max": 9.2,
-            "points": 7
+            "min": 21,
+            "max": 28,
+            "points": 9
+          },
+          {
+            "min": 29,
+            "max": 30,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -475,28 +475,57 @@
       {
         "gender": "Girl",
         "age": 14,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
         "scale": [
           {
-            "min": null,
-            "max": 7.9,
-            "points": 10
+            "min": 0,
+            "max": 10,
+            "points": 7
           },
           {
-            "min": 8.0,
-            "max": 8.1,
-            "points": 9
-          },
-          {
-            "min": 8.2,
-            "max": 8.6,
+            "min": 11,
+            "max": 20,
             "points": 8
           },
           {
-            "min": 8.7,
-            "max": 9.4,
+            "min": 21,
+            "max": 28,
+            "points": 9
+          },
+          {
+            "min": 29,
+            "max": 30,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 15,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
+        "scale": [
+          {
+            "min": 0,
+            "max": 10,
             "points": 7
+          },
+          {
+            "min": 11,
+            "max": 20,
+            "points": 8
+          },
+          {
+            "min": 21,
+            "max": 28,
+            "points": 9
+          },
+          {
+            "min": 29,
+            "max": 30,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -504,57 +533,28 @@
       {
         "gender": "Boy",
         "age": 14,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
         "scale": [
           {
-            "min": null,
-            "max": 7.4,
-            "points": 10
+            "min": 0,
+            "max": 10,
+            "points": 7
           },
           {
-            "min": 7.5,
-            "max": 7.6,
-            "points": 9
-          },
-          {
-            "min": 7.7,
-            "max": 8.0,
+            "min": 11,
+            "max": 20,
             "points": 8
           },
           {
-            "min": 8.1,
-            "max": 8.8,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 15,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 8.0,
-            "points": 10
-          },
-          {
-            "min": 8.1,
-            "max": 8.2,
+            "min": 21,
+            "max": 28,
             "points": 9
           },
           {
-            "min": 8.3,
-            "max": 8.7,
-            "points": 8
-          },
-          {
-            "min": 8.8,
-            "max": 9.4,
-            "points": 7
+            "min": 29,
+            "max": 30,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -562,28 +562,28 @@
       {
         "gender": "Boy",
         "age": 15,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
         "scale": [
           {
-            "min": null,
-            "max": 7.2,
-            "points": 10
+            "min": 0,
+            "max": 10,
+            "points": 7
           },
           {
-            "min": 7.3,
-            "max": 7.4,
-            "points": 9
-          },
-          {
-            "min": 7.5,
-            "max": 7.7,
+            "min": 11,
+            "max": 20,
             "points": 8
           },
           {
-            "min": 7.8,
-            "max": 8.4,
-            "points": 7
+            "min": 21,
+            "max": 28,
+            "points": 9
+          },
+          {
+            "min": 29,
+            "max": 30,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -591,57 +591,28 @@
       {
         "gender": "Girl",
         "age": 16,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
         "scale": [
           {
-            "min": null,
-            "max": 7.9,
-            "points": 10
+            "min": 0,
+            "max": 10,
+            "points": 7
           },
           {
-            "min": 8.0,
-            "max": 8.1,
-            "points": 9
-          },
-          {
-            "min": 8.2,
-            "max": 8.5,
+            "min": 11,
+            "max": 20,
             "points": 8
           },
           {
-            "min": 8.6,
-            "max": 9.3,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 16,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 7.0,
-            "points": 10
-          },
-          {
-            "min": 7.1,
-            "max": 7.1,
+            "min": 21,
+            "max": 28,
             "points": 9
           },
           {
-            "min": 7.2,
-            "max": 7.4,
-            "points": 8
-          },
-          {
-            "min": 7.5,
-            "max": 8.0,
-            "points": 7
+            "min": 29,
+            "max": 30,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -649,28 +620,57 @@
       {
         "gender": "Girl",
         "age": 17,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
         "scale": [
           {
-            "min": null,
-            "max": 7.9,
-            "points": 10
+            "min": 0,
+            "max": 10,
+            "points": 7
           },
           {
-            "min": 8.0,
-            "max": 8.1,
-            "points": 9
-          },
-          {
-            "min": 8.2,
-            "max": 8.5,
+            "min": 11,
+            "max": 20,
             "points": 8
           },
           {
-            "min": 8.6,
-            "max": 9.2,
+            "min": 21,
+            "max": 28,
+            "points": 9
+          },
+          {
+            "min": 29,
+            "max": 30,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 16,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
+        "scale": [
+          {
+            "min": 0,
+            "max": 10,
             "points": 7
+          },
+          {
+            "min": 11,
+            "max": 20,
+            "points": 8
+          },
+          {
+            "min": 21,
+            "max": 28,
+            "points": 9
+          },
+          {
+            "min": 29,
+            "max": 30,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -678,28 +678,28 @@
       {
         "gender": "Boy",
         "age": 17,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "Flexion avant",
+        "maxScore": 30,
         "scale": [
           {
-            "min": null,
-            "max": 6.9,
-            "points": 10
+            "min": 0,
+            "max": 10,
+            "points": 7
           },
           {
-            "min": 7.0,
-            "max": 7.0,
-            "points": 9
-          },
-          {
-            "min": 7.1,
-            "max": 7.3,
+            "min": 11,
+            "max": 20,
             "points": 8
           },
           {
-            "min": 7.4,
-            "max": 8.0,
-            "points": 7
+            "min": 21,
+            "max": 28,
+            "points": 9
+          },
+          {
+            "min": 29,
+            "max": 30,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -708,377 +708,18 @@
     "showCriteriaForm": true
   },
   {
-    "name": "Course de 50 m",
+    "name": "Redressement Assis",
     "criteria": [
       {
         "gender": "Girl",
         "age": 12,
-        "criteria": "time",
-        "maxScore": null,
+        "criteria": "redressements assis",
+        "maxScore": 50,
         "scale": [
           {
-            "min": null,
-            "max": 8.4,
-            "points": 10
-          },
-          {
-            "min": 8.5,
-            "max": 8.6,
-            "points": 9
-          },
-          {
-            "min": 8.7,
-            "max": 9.2,
-            "points": 8
-          },
-          {
-            "min": 9.3,
-            "max": 10.2,
+            "min": 19,
+            "max": 29,
             "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 12,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 8.1,
-            "points": 10
-          },
-          {
-            "min": 8.2,
-            "max": 8.4,
-            "points": 9
-          },
-          {
-            "min": 8.5,
-            "max": 8.8,
-            "points": 8
-          },
-          {
-            "min": 8.9,
-            "max": 9.7,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 13,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 8.0,
-            "points": 10
-          },
-          {
-            "min": 8.1,
-            "max": 8.2,
-            "points": 9
-          },
-          {
-            "min": 8.3,
-            "max": 8.7,
-            "points": 8
-          },
-          {
-            "min": 8.8,
-            "max": 9.5,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 13,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 7.7,
-            "points": 10
-          },
-          {
-            "min": 7.8,
-            "max": 7.9,
-            "points": 9
-          },
-          {
-            "min": 8.0,
-            "max": 8.4,
-            "points": 8
-          },
-          {
-            "min": 8.5,
-            "max": 9.2,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 14,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 7.9,
-            "points": 10
-          },
-          {
-            "min": 8.0,
-            "max": 8.1,
-            "points": 9
-          },
-          {
-            "min": 8.2,
-            "max": 8.6,
-            "points": 8
-          },
-          {
-            "min": 8.7,
-            "max": 9.4,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 14,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 7.4,
-            "points": 10
-          },
-          {
-            "min": 7.5,
-            "max": 7.6,
-            "points": 9
-          },
-          {
-            "min": 7.7,
-            "max": 8.0,
-            "points": 8
-          },
-          {
-            "min": 8.1,
-            "max": 8.8,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 15,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 8.0,
-            "points": 10
-          },
-          {
-            "min": 8.1,
-            "max": 8.2,
-            "points": 9
-          },
-          {
-            "min": 8.3,
-            "max": 8.7,
-            "points": 8
-          },
-          {
-            "min": 8.8,
-            "max": 9.4,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 15,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 7.2,
-            "points": 10
-          },
-          {
-            "min": 7.3,
-            "max": 7.4,
-            "points": 9
-          },
-          {
-            "min": 7.5,
-            "max": 7.7,
-            "points": 8
-          },
-          {
-            "min": 7.8,
-            "max": 8.4,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 16,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 7.9,
-            "points": 10
-          },
-          {
-            "min": 8.0,
-            "max": 8.1,
-            "points": 9
-          },
-          {
-            "min": 8.2,
-            "max": 8.5,
-            "points": 8
-          },
-          {
-            "min": 8.6,
-            "max": 9.3,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 16,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 7.0,
-            "points": 10
-          },
-          {
-            "min": 7.1,
-            "max": 7.1,
-            "points": 9
-          },
-          {
-            "min": 7.2,
-            "max": 7.4,
-            "points": 8
-          },
-          {
-            "min": 7.5,
-            "max": 8.0,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 17,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 7.9,
-            "points": 10
-          },
-          {
-            "min": 8.0,
-            "max": 8.1,
-            "points": 9
-          },
-          {
-            "min": 8.2,
-            "max": 8.5,
-            "points": 8
-          },
-          {
-            "min": 8.6,
-            "max": 9.2,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 17,
-        "criteria": "time",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": null,
-            "max": 6.9,
-            "points": 10
-          },
-          {
-            "min": 7.0,
-            "max": 7.0,
-            "points": 9
-          },
-          {
-            "min": 7.1,
-            "max": 7.3,
-            "points": 8
-          },
-          {
-            "min": 7.4,
-            "max": 8.0,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      }
-    ],
-    "showCriteriaForm": true
-  },
-  {
-    "name": "Redressements assis",
-    "criteria": [
-      {
-        "gender": "Girl",
-        "age": 12,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 50,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 43,
-            "max": 49,
-            "points": 9
           },
           {
             "min": 30,
@@ -1086,9 +727,43 @@
             "points": 8
           },
           {
-            "min": 19,
-            "max": 29,
+            "min": 43,
+            "max": 49,
+            "points": 9
+          },
+          {
+            "min": 50,
+            "max": 50,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 13,
+        "criteria": "Redressement assis",
+        "maxScore": 59,
+        "scale": [
+          {
+            "min": 22,
+            "max": 39,
             "points": 7
+          },
+          {
+            "min": 40,
+            "max": 49,
+            "points": 8
+          },
+          {
+            "min": 50,
+            "max": 58,
+            "points": 9
+          },
+          {
+            "min": 59,
+            "max": 59,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1096,18 +771,13 @@
       {
         "gender": "Boy",
         "age": 12,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "Redressement assis",
+        "maxScore": 64,
         "scale": [
           {
-            "min": 64,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 54,
-            "max": 63,
-            "points": 9
+            "min": 22,
+            "max": 31,
+            "points": 7
           },
           {
             "min": 32,
@@ -1115,38 +785,14 @@
             "points": 8
           },
           {
-            "min": 22,
-            "max": 31,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 13,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 59,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 50,
-            "max": 58,
+            "min": 54,
+            "max": 63,
             "points": 9
           },
           {
-            "min": 30,
-            "max": 49,
-            "points": 8
-          },
-          {
-            "min": 22,
-            "max": 29,
-            "points": 7
+            "min": 64,
+            "max": 64,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1154,18 +800,13 @@
       {
         "gender": "Boy",
         "age": 13,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "Redressement assis",
+        "maxScore": 59,
         "scale": [
           {
-            "min": 59,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 51,
-            "max": 58,
-            "points": 9
+            "min": 28,
+            "max": 38,
+            "points": 7
           },
           {
             "min": 39,
@@ -1173,9 +814,14 @@
             "points": 8
           },
           {
-            "min": 28,
-            "max": 38,
-            "points": 7
+            "min": 51,
+            "max": 58,
+            "points": 9
+          },
+          {
+            "min": 59,
+            "max": 59,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1183,18 +829,13 @@
       {
         "gender": "Girl",
         "age": 14,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "redressements assis",
+        "maxScore": 50,
         "scale": [
           {
-            "min": 48,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 41,
-            "max": 47,
-            "points": 9
+            "min": 20,
+            "max": 29,
+            "points": 7
           },
           {
             "min": 30,
@@ -1202,38 +843,14 @@
             "points": 8
           },
           {
-            "min": 20,
-            "max": 29,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 14,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 62,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 54,
-            "max": 61,
+            "min": 41,
+            "max": 47,
             "points": 9
           },
           {
-            "min": 40,
-            "max": 53,
-            "points": 8
-          },
-          {
-            "min": 24,
-            "max": 39,
-            "points": 7
+            "min": 48,
+            "max": 48,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1241,47 +858,13 @@
       {
         "gender": "Girl",
         "age": 15,
-        "criteria": "repetitions",
+        "criteria": "redressements assis",
         "maxScore": null,
         "scale": [
-          {
-            "min": 38,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 35,
-            "max": 37,
-            "points": 9
-          },
           {
             "min": 26,
-            "max": 34,
-            "points": 8
-          },
-          {
-            "min": 15,
-            "max": 25,
+            "max": 44,
             "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 15,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 75,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 67,
-            "max": 74,
-            "points": 9
           },
           {
             "min": 45,
@@ -1289,9 +872,72 @@
             "points": 8
           },
           {
+            "min": 67,
+            "max": 76,
+            "points": 9
+          },
+          {
+            "min": 75,
+            "max": 75,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 14,
+        "criteria": "redressements assis",
+        "maxScore": null,
+        "scale": [
+          {
+            "min": 24,
+            "max": 39,
+            "points": 7
+          },
+          {
+            "min": 40,
+            "max": 53,
+            "points": 8
+          },
+          {
+            "min": 54,
+            "max": 61,
+            "points": 9
+          },
+          {
+            "min": 62,
+            "max": 62,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 15,
+        "criteria": "redressements assis",
+        "maxScore": 75,
+        "scale": [
+          {
             "min": 26,
             "max": 44,
             "points": 7
+          },
+          {
+            "min": 45,
+            "max": 66,
+            "points": 8
+          },
+          {
+            "min": 67,
+            "max": 74,
+            "points": 9
+          },
+          {
+            "min": 75,
+            "max": 75,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1299,18 +945,13 @@
       {
         "gender": "Girl",
         "age": 16,
-        "criteria": "repetitions",
+        "criteria": "redressements assis",
         "maxScore": null,
         "scale": [
           {
-            "min": 49,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 35,
-            "max": 48,
-            "points": 9
+            "min": 16,
+            "max": 25,
+            "points": 7
           },
           {
             "min": 26,
@@ -1318,38 +959,14 @@
             "points": 8
           },
           {
-            "min": 16,
-            "max": 25,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 16,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 73,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 50,
-            "max": 72,
+            "min": 35,
+            "max": 37,
             "points": 9
           },
           {
-            "min": 37,
-            "max": 49,
-            "points": 8
-          },
-          {
-            "min": 24,
-            "max": 36,
-            "points": 7
+            "min": 38,
+            "max": 38,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1357,18 +974,13 @@
       {
         "gender": "Girl",
         "age": 17,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "redressements assis",
+        "maxScore": 68,
         "scale": [
           {
-            "min": 68,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 49,
-            "max": 67,
-            "points": 9
+            "min": 26,
+            "max": 39,
+            "points": 7
           },
           {
             "min": 40,
@@ -1376,9 +988,43 @@
             "points": 8
           },
           {
-            "min": 26,
-            "max": 39,
+            "min": 49,
+            "max": 67,
+            "points": 9
+          },
+          {
+            "min": 68,
+            "max": 68,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 16,
+        "criteria": "redressements assis",
+        "maxScore": null,
+        "scale": [
+          {
+            "min": 24,
+            "max": 36,
             "points": 7
+          },
+          {
+            "min": 37,
+            "max": 49,
+            "points": 8
+          },
+          {
+            "min": 50,
+            "max": 72,
+            "points": 9
+          },
+          {
+            "min": 73,
+            "max": 73,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1386,18 +1032,13 @@
       {
         "gender": "Boy",
         "age": 17,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "redressements assis",
+        "maxScore": 66,
         "scale": [
           {
-            "min": 66,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 58,
-            "max": 65,
-            "points": 9
+            "min": 25,
+            "max": 41,
+            "points": 7
           },
           {
             "min": 42,
@@ -1405,9 +1046,14 @@
             "points": 8
           },
           {
-            "min": 25,
-            "max": 41,
-            "points": 7
+            "min": 58,
+            "max": 65,
+            "points": 9
+          },
+          {
+            "min": 66,
+            "max": 66,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1416,33 +1062,62 @@
     "showCriteriaForm": true
   },
   {
-    "name": "Extension des bras",
+    "name": "Test Léger - Navette",
     "criteria": [
       {
         "gender": "Girl",
         "age": 12,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "Test navette",
+        "maxScore": 10,
         "scale": [
           {
-            "min": 20,
-            "max": null,
-            "points": 10
+            "min": 0,
+            "max": 2,
+            "points": 7
           },
           {
-            "min": 17,
-            "max": 19,
-            "points": 9
-          },
-          {
-            "min": 10,
-            "max": 16,
+            "min": 3,
+            "max": 5,
             "points": 8
           },
           {
-            "min": 2,
-            "max": 9,
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 13,
+        "criteria": "Test navette",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 2,
             "points": 7
+          },
+          {
+            "min": 3,
+            "max": 5,
+            "points": 8
+          },
+          {
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1450,115 +1125,115 @@
       {
         "gender": "Boy",
         "age": 12,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "Test navette",
+        "maxScore": 10,
         "scale": [
           {
-            "min": 31,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 28,
-            "max": 30,
-            "points": 9
-          },
-          {
-            "min": 18,
-            "max": 27,
-            "points": 8
-          },
-          {
-            "min": 9,
-            "max": 17,
+            "min": 0,
+            "max": 2,
             "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 13,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 21,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 17,
-            "max": 20,
-            "points": 9
-          },
-          {
-            "min": 11,
-            "max": 16,
-            "points": 8
-          },
-          {
-            "min": 4,
-            "max": 10,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 13,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 39,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 36,
-            "max": 38,
-            "points": 9
-          },
-          {
-            "min": 24,
-            "max": 35,
-            "points": 8
-          },
-          {
-            "min": 11,
-            "max": 23,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 14,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 20,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 16,
-            "max": 19,
-            "points": 9
-          },
-          {
-            "min": 10,
-            "max": 15,
-            "points": 8
           },
           {
             "min": 3,
-            "max": 9,
+            "max": 5,
+            "points": 8
+          },
+          {
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 13,
+        "criteria": "Test navette",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 2,
             "points": 7
+          },
+          {
+            "min": 3,
+            "max": 5,
+            "points": 8
+          },
+          {
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 14,
+        "criteria": "Test navette",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 2,
+            "points": 7
+          },
+          {
+            "min": 3,
+            "max": 5,
+            "points": 8
+          },
+          {
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 15,
+        "criteria": "Test navette",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 2,
+            "points": 7
+          },
+          {
+            "min": 3,
+            "max": 5,
+            "points": 8
+          },
+          {
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1566,57 +1241,28 @@
       {
         "gender": "Boy",
         "age": 14,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "Test navette",
+        "maxScore": 10,
         "scale": [
           {
-            "min": 42,
-            "max": null,
-            "points": 10
+            "min": 0,
+            "max": 2,
+            "points": 7
           },
           {
-            "min": 32,
-            "max": 41,
-            "points": 9
-          },
-          {
-            "min": 24,
-            "max": 31,
+            "min": 3,
+            "max": 5,
             "points": 8
           },
           {
-            "min": 13,
-            "max": 23,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Girl",
-        "age": 15,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 20,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 20,
-            "max": null,
+            "min": 6,
+            "max": 8,
             "points": 9
           },
           {
-            "min": 15,
-            "max": 19,
-            "points": 8
-          },
-          {
-            "min": 7,
-            "max": 14,
-            "points": 7
+            "min": 9,
+            "max": 10,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1624,28 +1270,28 @@
       {
         "gender": "Boy",
         "age": 15,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "Test navette",
+        "maxScore": 10,
         "scale": [
           {
-            "min": 44,
-            "max": null,
-            "points": 10
+            "min": 0,
+            "max": 2,
+            "points": 7
           },
           {
-            "min": 37,
-            "max": 43,
-            "points": 9
-          },
-          {
-            "min": 30,
-            "max": 36,
+            "min": 3,
+            "max": 5,
             "points": 8
           },
           {
-            "min": 20,
-            "max": 29,
-            "points": 7
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1653,57 +1299,28 @@
       {
         "gender": "Girl",
         "age": 16,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "Test navette",
+        "maxScore": 10,
         "scale": [
           {
-            "min": 24,
-            "max": null,
-            "points": 10
+            "min": 0,
+            "max": 2,
+            "points": 7
           },
           {
-            "min": 20,
-            "max": 23,
-            "points": 9
-          },
-          {
-            "min": 12,
-            "max": 19,
+            "min": 3,
+            "max": 5,
             "points": 8
           },
           {
-            "min": 4,
-            "max": 11,
-            "points": 7
-          }
-        ],
-        "showScaleForm": true
-      },
-      {
-        "gender": "Boy",
-        "age": 16,
-        "criteria": "repetitions",
-        "maxScore": null,
-        "scale": [
-          {
-            "min": 44,
-            "max": null,
-            "points": 10
-          },
-          {
-            "min": 40,
-            "max": 43,
+            "min": 6,
+            "max": 8,
             "points": 9
           },
           {
-            "min": 30,
-            "max": 39,
-            "points": 8
-          },
-          {
-            "min": 22,
-            "max": 29,
-            "points": 7
+            "min": 9,
+            "max": 10,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1711,28 +1328,57 @@
       {
         "gender": "Girl",
         "age": 17,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "Test navette",
+        "maxScore": 10,
         "scale": [
           {
-            "min": 25,
-            "max": null,
-            "points": 10
+            "min": 0,
+            "max": 2,
+            "points": 7
           },
           {
-            "min": 20,
-            "max": 24,
-            "points": 9
-          },
-          {
-            "min": 16,
-            "max": 19,
+            "min": 3,
+            "max": 5,
             "points": 8
           },
           {
-            "min": 7,
-            "max": 15,
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 16,
+        "criteria": "Test navette",
+        "maxScore": 10,
+        "scale": [
+          {
+            "min": 0,
+            "max": 2,
             "points": 7
+          },
+          {
+            "min": 3,
+            "max": 5,
+            "points": 8
+          },
+          {
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
           }
         ],
         "showScaleForm": true
@@ -1740,28 +1386,28 @@
       {
         "gender": "Boy",
         "age": 17,
-        "criteria": "repetitions",
-        "maxScore": null,
+        "criteria": "Test navette",
+        "maxScore": 10,
         "scale": [
           {
-            "min": 53,
-            "max": null,
-            "points": 10
+            "min": 0,
+            "max": 2,
+            "points": 7
           },
           {
-            "min": 46,
-            "max": 52,
-            "points": 9
-          },
-          {
-            "min": 37,
-            "max": 45,
+            "min": 3,
+            "max": 5,
             "points": 8
           },
           {
-            "min": 23,
-            "max": 36,
-            "points": 7
+            "min": 6,
+            "max": 8,
+            "points": 9
+          },
+          {
+            "min": 9,
+            "max": 10,
+            "points": 10
           }
         ],
         "showScaleForm": true

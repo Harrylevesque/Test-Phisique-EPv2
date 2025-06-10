@@ -66,47 +66,88 @@ startBtn.onclick = function(e) {
 
 function showGradingInputs() {
     let html = '';
-    let totalPoints = 0;
     let totalPossible = 0;
     let foundAny = false;
+    let selectedBlocks = {};
     html += '<form id="grading-form">';
     uploadedActivities.forEach((act, aidx) => {
-        // Find the matching criteria for this user
-        const crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
+        // Hide test léger-navette for sec 1-2 (by both name variants)
+        if ((act.name === 'test léger-navette' || act.name.toLowerCase().includes('navette')) && (userGradeSelect.value === '1' || userGradeSelect.value === '2')) {
+            return;
+        }
+        // Special exception for test léger-navette (by both name variants)
+        let crit;
+        if (act.name === 'test léger-navette' || act.name.toLowerCase().includes('navette')) {
+            let overrideAge = userAge;
+            if (userGradeSelect.value === '3') overrideAge = 15;
+            if (userGradeSelect.value === '4' || userGradeSelect.value === '5') overrideAge = 17;
+            crit = act.criteria.find(c => c.gender === userGender && c.age === overrideAge);
+        } else {
+            crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
+        }
         if (!crit) return;
         foundAny = true;
         html += `<div class="activity"><strong>${act.name}</strong> <span style="color:#888;font-size:0.95em;">[${crit.criteria}]</span><br>Max : ${crit.maxScore}<br>`;
-        html += `<input type="text" name="grade-${aidx}" min="0" max="${crit.maxScore}" placeholder="Entrez votre score" required style="width:120px;">`;
+        html += '<div class="block-list">';
+        crit.scale.forEach((block, bidx) => {
+            html += `<button type="button" class="block-btn" data-aidx="${aidx}" data-bidx="${bidx}" style="margin:4px;">Score ${block.min} - ${block.max} → ${block.points} pts</button>`;
+        });
         html += `<span id="block-result-${aidx}" style="margin-left:10px;color:#007bff;"></span>`;
-        html += '</div>';
-        totalPossible += crit.scale.reduce((acc, b) => acc + b.points, 0);
+        html += '</div></div>';
+        totalPossible += Math.max(...crit.scale.map(b => b.points));
     });
     html += foundAny ? '<button type="submit">Calculer</button></form>' : '';
     html += foundAny ? '<div id="grading-result" style="margin-top:20px;font-size:1.2em;"></div>' : '<div style="color:red;margin-top:20px;">Aucune activité ne correspond à vos critères.</div>';
     gradingSection.innerHTML = html;
     if (foundAny) {
+        // Add click listeners to block buttons
+        document.querySelectorAll('.block-btn').forEach(btn => {
+            btn.onclick = function() {
+                const aidx = btn.getAttribute('data-aidx');
+                const bidx = btn.getAttribute('data-bidx');
+                // Deselect all for this activity
+                document.querySelectorAll(`.block-btn[data-aidx='${aidx}']`).forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                selectedBlocks[aidx] = bidx;
+                // Show selection
+                const act = uploadedActivities[aidx];
+                // Special exception for test léger-navette
+                let crit;
+                if (act.name === 'test léger-navette') {
+                    let overrideAge = userAge;
+                    if (userGradeSelect.value === '3') overrideAge = 15;
+                    if (userGradeSelect.value === '4' || userGradeSelect.value === '5') overrideAge = 17;
+                    crit = act.criteria.find(c => c.gender === userGender && c.age === overrideAge);
+                } else {
+                    crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
+                }
+                const block = crit.scale[bidx];
+                document.getElementById(`block-result-${aidx}`).textContent = `Sélectionné : Score ${block.min}-${block.max} → ${block.points} pts`;
+            };
+        });
         document.getElementById('grading-form').onsubmit = function(e) {
             e.preventDefault();
             let total = 0;
-            let totalBlocks = 0;
             uploadedActivities.forEach((act, aidx) => {
-                const crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
-                if (!crit) return;
-                const val = parseFloat(e.target[`grade-${aidx}`].value.replace(',', '.'));
-                let foundBlock = null;
-                if (!isNaN(val)) {
-                    foundBlock = crit.scale.find(b => val >= b.min && val <= b.max);
-                    if (foundBlock) {
-                        total += foundBlock.points;
-                        document.getElementById(`block-result-${aidx}`).textContent = `Bloc : ${foundBlock.min}-${foundBlock.max} → ${foundBlock.points} pts`;
-                    } else {
-                        document.getElementById(`block-result-${aidx}`).textContent = 'Aucun bloc';
-                    }
+                // Special exception for test léger-navette
+                let crit;
+                if (act.name === 'test léger-navette') {
+                    let overrideAge = userAge;
+                    if (userGradeSelect.value === '3') overrideAge = 15;
+                    if (userGradeSelect.value === '4' || userGradeSelect.value === '5') overrideAge = 17;
+                    crit = act.criteria.find(c => c.gender === userGender && c.age === overrideAge);
+                } else {
+                    crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
                 }
-                totalBlocks += crit.scale.reduce((acc, b) => acc + b.points, 0);
+                if (!crit) return;
+                const bidx = selectedBlocks[aidx];
+                if (bidx !== undefined) {
+                    const block = crit.scale[bidx];
+                    total += block.points;
+                }
             });
-            let percent = totalBlocks ? ((total / totalBlocks) * 100).toFixed(2) : '0.00';
-            document.getElementById('grading-result').innerHTML = `<strong>Total : ${total} / ${totalBlocks} pts (${percent}%)</strong>`;
+            let percent = totalPossible ? ((total / totalPossible) * 100).toFixed(2) : '0.00';
+            document.getElementById('grading-result').innerHTML = `<strong>Total : ${total} / ${totalPossible} pts (${percent}%)</strong>`;
         };
     }
 }
