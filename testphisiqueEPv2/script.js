@@ -106,3 +106,24 @@ function showGradingInputs() {
         document.getElementById('grading-result').innerHTML = `<strong>Total : ${total} / ${totalBlocks} pts (${percent}%)</strong>`;
     };
 }
+
+// --- Chargement automatique du fichier JSON au démarrage ---
+fetch('scr/fullversion.json')
+    .then(r => r.json())
+    .then(data => {
+        uploadedActivities = data;
+        // Remplir les options de sexe et d'âge comme lors d'un upload
+        const genders = new Set();
+        uploadedActivities.forEach(act => {
+            act.criteria.forEach(c => {
+                genders.add(c.gender);
+            });
+        });
+        userGenderSelect.innerHTML = '<option value="">Sélectionner le sexe</option>' + Array.from(genders).map(g => `<option value="${g}">${g === 'Boy' ? 'Garçon' : 'Fille'}</option>`).join('');
+        userAgeSelect.innerHTML = '<option value="">Sélectionner l\'âge</option>';
+        userForm.style.display = '';
+        gradingSection.innerHTML = '';
+    })
+    .catch(() => {
+        // Optionnel : message d'erreur si le fichier n'est pas trouvé
+    });
