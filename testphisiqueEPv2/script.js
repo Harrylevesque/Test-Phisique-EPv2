@@ -68,43 +68,47 @@ function showGradingInputs() {
     let html = '';
     let totalPoints = 0;
     let totalPossible = 0;
+    let foundAny = false;
     html += '<form id="grading-form">';
     uploadedActivities.forEach((act, aidx) => {
         // Find the matching criteria for this user
         const crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
         if (!crit) return;
+        foundAny = true;
         html += `<div class="activity"><strong>${act.name}</strong> <span style="color:#888;font-size:0.95em;">[${crit.criteria}]</span><br>Max : ${crit.maxScore}<br>`;
         html += `<input type="text" name="grade-${aidx}" min="0" max="${crit.maxScore}" placeholder="Entrez votre score" required style="width:120px;">`;
         html += `<span id="block-result-${aidx}" style="margin-left:10px;color:#007bff;"></span>`;
         html += '</div>';
         totalPossible += crit.scale.reduce((acc, b) => acc + b.points, 0);
     });
-    html += '<button type="submit">Calculer</button></form>';
-    html += '<div id="grading-result" style="margin-top:20px;font-size:1.2em;"></div>';
+    html += foundAny ? '<button type="submit">Calculer</button></form>' : '';
+    html += foundAny ? '<div id="grading-result" style="margin-top:20px;font-size:1.2em;"></div>' : '<div style="color:red;margin-top:20px;">Aucune activité ne correspond à vos critères.</div>';
     gradingSection.innerHTML = html;
-    document.getElementById('grading-form').onsubmit = function(e) {
-        e.preventDefault();
-        let total = 0;
-        let totalBlocks = 0;
-        uploadedActivities.forEach((act, aidx) => {
-            const crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
-            if (!crit) return;
-            const val = parseFloat(e.target[`grade-${aidx}`].value.replace(',', '.'));
-            let foundBlock = null;
-            if (!isNaN(val)) {
-                foundBlock = crit.scale.find(b => val >= b.min && val <= b.max);
-                if (foundBlock) {
-                    total += foundBlock.points;
-                    document.getElementById(`block-result-${aidx}`).textContent = `Bloc : ${foundBlock.min}-${foundBlock.max} → ${foundBlock.points} pts`;
-                } else {
-                    document.getElementById(`block-result-${aidx}`).textContent = 'Aucun bloc';
+    if (foundAny) {
+        document.getElementById('grading-form').onsubmit = function(e) {
+            e.preventDefault();
+            let total = 0;
+            let totalBlocks = 0;
+            uploadedActivities.forEach((act, aidx) => {
+                const crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
+                if (!crit) return;
+                const val = parseFloat(e.target[`grade-${aidx}`].value.replace(',', '.'));
+                let foundBlock = null;
+                if (!isNaN(val)) {
+                    foundBlock = crit.scale.find(b => val >= b.min && val <= b.max);
+                    if (foundBlock) {
+                        total += foundBlock.points;
+                        document.getElementById(`block-result-${aidx}`).textContent = `Bloc : ${foundBlock.min}-${foundBlock.max} → ${foundBlock.points} pts`;
+                    } else {
+                        document.getElementById(`block-result-${aidx}`).textContent = 'Aucun bloc';
+                    }
                 }
-            }
-            totalBlocks += crit.scale.reduce((acc, b) => acc + b.points, 0);
-        });
-        let percent = totalBlocks ? ((total / totalBlocks) * 100).toFixed(2) : '0.00';
-        document.getElementById('grading-result').innerHTML = `<strong>Total : ${total} / ${totalBlocks} pts (${percent}%)</strong>`;
-    };
+                totalBlocks += crit.scale.reduce((acc, b) => acc + b.points, 0);
+            });
+            let percent = totalBlocks ? ((total / totalBlocks) * 100).toFixed(2) : '0.00';
+            document.getElementById('grading-result').innerHTML = `<strong>Total : ${total} / ${totalBlocks} pts (${percent}%)</strong>`;
+        };
+    }
 }
 
 // --- Chargement automatique du fichier JSON au démarrage ---
