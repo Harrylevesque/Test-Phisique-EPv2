@@ -59,7 +59,7 @@ function showGradingInputs() {
         const crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
         if (!crit) return;
         html += `<div class="activity"><strong>${act.name}</strong> <span style="color:#888;font-size:0.95em;">[${crit.criteria}]</span><br>Max : ${crit.maxScore}<br>`;
-        html += `<input type="number" name="grade-${aidx}" min="0" max="${crit.maxScore}" placeholder="Entrez votre score" required style="width:120px;">`;
+        html += `<input type="text" name="grade-${aidx}" min="0" max="${crit.maxScore}" placeholder="Entrez votre score" required style="width:120px;">`;
         html += `<span id="block-result-${aidx}" style="margin-left:10px;color:#007bff;"></span>`;
         html += '</div>';
         totalPossible += crit.scale.reduce((acc, b) => acc + b.points, 0);
@@ -73,7 +73,7 @@ function showGradingInputs() {
         uploadedActivities.forEach((act, aidx) => {
             const crit = act.criteria.find(c => c.gender === userGender && c.age === userAge);
             if (!crit) return;
-            const val = parseFloat(e.target[`grade-${aidx}`].value);
+            const val = parseFloat(e.target[`grade-${aidx}`].value.replace(',', '.'));
             let foundBlock = null;
             if (!isNaN(val)) {
                 foundBlock = crit.scale.find(b => val >= b.min && val <= b.max);

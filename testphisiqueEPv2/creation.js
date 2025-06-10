@@ -21,7 +21,7 @@ function renderActivities() {
                         <option value="Boy">Garçon</option>
                         <option value="Girl">Fille</option>
                     </select>
-                    <input type="number" name="age" min="1" max="120" placeholder="Âge" required style="width:70px;">
+                    <input type="text" name="age" min="1" max="120" placeholder="Âge" required style="width:70px;">
                     <input type="text" name="criteria" placeholder="Critère (ex: Pushups)" required style="width:120px;">
                     <button type="submit">Ajouter Critère</button>
                 </form>
@@ -34,9 +34,9 @@ function renderActivities() {
                         <button onclick="toggleScaleForm(${idx},${cidx})" style="margin-left:8px;">${crit.showScaleForm ? 'Cacher' : 'Ajouter/Modifier Blocs'}</button>
                         <div id="scale-form-${idx}-${cidx}" style="display:${crit.showScaleForm ? 'block' : 'none'};margin-top:6px;">
                             <form onsubmit="addScaleBlock(event,${idx},${cidx})" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
-                                <input type="number" name="min" placeholder="Score min" required style="width:70px;">
-                                <input type="number" name="max" placeholder="Score max" required style="width:70px;">
-                                <input type="number" name="points" placeholder="Points pour ce bloc" required style="width:110px;">
+                                <input type="text" name="min" placeholder="Score min" required style="width:70px;">
+                                <input type="text" name="max" placeholder="Score max" required style="width:70px;">
+                                <input type="text" name="points" placeholder="Points pour ce bloc" required style="width:110px;">
                                 <button type="submit">Ajouter Bloc</button>
                             </form>
                         </div>
@@ -84,11 +84,11 @@ function toggleCriteriaForm(idx) {
 function addCriteria(e, aidx) {
     e.preventDefault();
     const gender = e.target.gender.value;
-    const age = parseInt(e.target.age.value, 10);
+    const age = parseFloat(e.target.age.value.replace(',', '.'));
     const criteria = e.target.criteria.value.trim();
     let maxScore = prompt('Enter the maximum score for this criteria:', '100');
-    maxScore = parseInt(maxScore, 10);
-    if (gender && age && criteria && !isNaN(maxScore)) {
+    if (maxScore) maxScore = parseFloat(maxScore.replace(',', '.'));
+    if (gender && !isNaN(age) && criteria && !isNaN(maxScore)) {
         activities[aidx].criteria.push({ gender, age, criteria, maxScore, scale: [], showScaleForm: false });
         renderActivities();
     }
@@ -109,9 +109,9 @@ function toggleScaleForm(aidx, cidx) {
 // Add grading scale block
 function addScaleBlock(e, aidx, cidx) {
     e.preventDefault();
-    const min = parseInt(e.target.min.value, 10);
-    const max = parseInt(e.target.max.value, 10);
-    const points = parseInt(e.target.points.value, 10);
+    const min = parseFloat(e.target.min.value.replace(',', '.'));
+    const max = parseFloat(e.target.max.value.replace(',', '.'));
+    const points = parseFloat(e.target.points.value.replace(',', '.'));
     if (!isNaN(min) && !isNaN(max) && !isNaN(points)) {
         activities[aidx].criteria[cidx].scale.push({ min, max, points });
         renderActivities();
