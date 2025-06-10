@@ -65,6 +65,7 @@ function showGradingInputs() {
         totalPossible += crit.scale.reduce((acc, b) => acc + b.points, 0);
     });
     html += '<button type="submit">Calculer</button></form>';
+    html += '<div id="grading-result" style="margin-top:20px;font-size:1.2em;"></div>';
     gradingSection.innerHTML = html;
     document.getElementById('grading-form').onsubmit = function(e) {
         e.preventDefault();
@@ -87,6 +88,6 @@ function showGradingInputs() {
             totalBlocks += crit.scale.reduce((acc, b) => acc + b.points, 0);
         });
         let percent = totalBlocks ? ((total / totalBlocks) * 100).toFixed(2) : '0.00';
-        gradingSection.innerHTML += `<div style="margin-top:20px;font-size:1.2em;"><strong>Total : ${total} / ${totalBlocks} pts (${percent}%)</strong></div>`;
+        document.getElementById('grading-result').innerHTML = `<strong>Total : ${total} / ${totalBlocks} pts (${percent}%)</strong>`;
     };
 }
