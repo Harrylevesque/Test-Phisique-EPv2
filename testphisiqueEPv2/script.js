@@ -8,6 +8,7 @@ const uploadInput = document.getElementById('upload-json');
 const userForm = document.getElementById('user-form');
 const userGenderSelect = document.getElementById('user-gender');
 const userAgeSelect = document.getElementById('user-age');
+const userGradeSelect = document.getElementById('user-grade');
 const startBtn = document.getElementById('start-btn');
 const gradingSection = document.getElementById('grading-section');
 
@@ -28,7 +29,8 @@ uploadInput.onchange = function(e) {
                 });
             });
             userGenderSelect.innerHTML = '<option value="">Sélectionner le sexe</option>' + Array.from(genders).map(g => `<option value="${g}">${g === 'Boy' ? 'Garçon' : 'Fille'}</option>`).join('');
-            userAgeSelect.innerHTML = '<option value="">Sélectionner l\'âge</option>' + Array.from(ages).sort((a,b)=>a-b).map(a => `<option value="${a}">${a}</option>`).join('');
+            // On ne remplit pas userAgeSelect ici, il sera rempli selon le grade
+            userAgeSelect.innerHTML = '<option value="">Sélectionner l\'âge</option>';
             userForm.style.display = '';
             gradingSection.innerHTML = '';
         } catch (err) {
@@ -38,12 +40,25 @@ uploadInput.onchange = function(e) {
     reader.readAsText(file);
 };
 
+// Met à jour la liste des âges selon le grade sélectionné
+userGradeSelect.onchange = function() {
+    const grade = userGradeSelect.value;
+    let ages = [];
+    if (grade === '1') ages = [12, 13];
+    else if (grade === '2') ages = [13, 14];
+    else if (grade === '3') ages = [14, 15];
+    else if (grade === '4') ages = [15, 16];
+    else if (grade === '5') ages = [16, 17];
+    userAgeSelect.innerHTML = '<option value="">Sélectionner l\'âge</option>' + ages.map(a => `<option value="${a}">${a}</option>`).join('');
+};
+
 startBtn.onclick = function(e) {
     e.preventDefault();
+    const grade = userGradeSelect.value;
     userGender = userGenderSelect.value === 'Garçon' ? 'Boy' : (userGenderSelect.value === 'Fille' ? 'Girl' : userGenderSelect.value);
     userAge = parseInt(userAgeSelect.value, 10);
-    if (!userGender || isNaN(userAge)) {
-        alert('Veuillez sélectionner le sexe et l\'âge.');
+    if (!grade || !userGender || isNaN(userAge)) {
+        alert('Veuillez sélectionner le niveau, le sexe et l\'âge.');
         return;
     }
     showGradingInputs();
