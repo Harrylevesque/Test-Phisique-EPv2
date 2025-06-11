@@ -176,12 +176,6 @@
         ],
         "showScaleForm": true
       }
-    ],
-    "showCriteriaForm": true
-  },
-  {
-    "name": "couse 50m",
-    "criteria": [
       {
         "gender": "Boy",
         "age": 15,
