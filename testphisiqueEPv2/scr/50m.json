@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Course de 50m",
+    "criteria": [
+      {
+        "gender": "Girl",
+        "age": 12,
+        "criteria": "50m",
+        "maxScore": 10.2,
+        "scale": [
+          {
+            "min": 9.19,
+            "max": 10.2,
+            "points": 7
+          },
+          {
+            "min": 8.59,
+            "max": 9.2,
+            "points": 8
+          },
+          {
+            "min": 8.39,
+            "max": 8.6,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 8.4,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 13,
+        "criteria": "50m",
+        "maxScore": 9.5,
+        "scale": [
+          {
+            "min": 8.69,
+            "max": 9.5,
+            "points": 7
+          },
+          {
+            "min": 8.19,
+            "max": 8.7,
+            "points": 8
+          },
+          {
+            "min": 7.99,
+            "max": 8.2,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 8,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 14,
+        "criteria": "50m",
+        "maxScore": 9.4,
+        "scale": [
+          {
+            "min": 8.59,
+            "max": 9.4,
+            "points": 7
+          },
+          {
+            "min": 8.09,
+            "max": 8.6,
+            "points": 8
+          },
+          {
+            "min": 7.89,
+            "max": 8.1,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 7.9,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 12,
+        "criteria": "50m",
+        "maxScore": 9.7,
+        "scale": [
+          {
+            "min": 8.79,
+            "max": 9.7,
+            "points": 7
+          },
+          {
+            "min": 8.39,
+            "max": 8.8,
+            "points": 8
+          },
+          {
+            "min": 8.09,
+            "max": 8.4,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 8.1,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 13,
+        "criteria": "50m",
+        "maxScore": 9.2,
+        "scale": [
+          {
+            "min": 8.39,
+            "max": 9.2,
+            "points": 7
+          },
+          {
+            "min": 7.89,
+            "max": 8.4,
+            "points": 8
+          },
+          {
+            "min": 7.69,
+            "max": 7.9,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 7.7,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 14,
+        "criteria": "50m",
+        "maxScore": 8.8,
+        "scale": [
+          {
+            "min": 7.99,
+            "max": 8.8,
+            "points": 7
+          },
+          {
+            "min": 7.59,
+            "max": 8,
+            "points": 8
+          },
+          {
+            "min": 7.39,
+            "max": 7.6,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 7.4,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      }
+    ],
+    "showCriteriaForm": true
+  },
+  {
+    "name": "couse 50m",
+    "criteria": [
+      {
+        "gender": "Boy",
+        "age": 15,
+        "criteria": "couse 50m",
+        "maxScore": 8.4,
+        "scale": [
+          {
+            "min": 7.69,
+            "max": 8.4,
+            "points": 7
+          },
+          {
+            "min": 7.39,
+            "max": 7.7,
+            "points": 8
+          },
+          {
+            "min": 7.19,
+            "max": 7.4,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 7.2,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 15,
+        "criteria": "couse 50m",
+        "maxScore": 9.4,
+        "scale": [
+          {
+            "min": 8.69,
+            "max": 9.4,
+            "points": 7
+          },
+          {
+            "min": 8.19,
+            "max": 8.7,
+            "points": 8
+          },
+          {
+            "min": 7.99,
+            "max": 8.2,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 8,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 16,
+        "criteria": "couse 50m",
+        "maxScore": 8,
+        "scale": [
+          {
+            "min": 7.39,
+            "max": 8,
+            "points": 7
+          },
+          {
+            "min": 7.09,
+            "max": 7.4,
+            "points": 8
+          },
+          {
+            "min": 6.99,
+            "max": 7.1,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 7,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 16,
+        "criteria": "couse 50m",
+        "maxScore": 9.3,
+        "scale": [
+          {
+            "min": 8.49,
+            "max": 9.3,
+            "points": 7
+          },
+          {
+            "min": 8.09,
+            "max": 8.5,
+            "points": 8
+          },
+          {
+            "min": 7.89,
+            "max": 8.1,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 7.9,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 17,
+        "criteria": "couse 50m",
+        "maxScore": 8,
+        "scale": [
+          {
+            "min": 7.29,
+            "max": 8,
+            "points": 7
+          },
+          {
+            "min": 6.99,
+            "max": 7.3,
+            "points": 8
+          },
+          {
+            "min": 6.89,
+            "max": 7,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 6.9,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 17,
+        "criteria": "couse 50m",
+        "maxScore": 9.2,
+        "scale": [
+          {
+            "min": 8.49,
+            "max": 9.2,
+            "points": 7
+          },
+          {
+            "min": 8.09,
+            "max": 8.5,
+            "points": 8
+          },
+          {
+            "min": 7.89,
+            "max": 8.1,
+            "points": 9
+          },
+          {
+            "min": 0,
+            "max": 7.9,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      }
+    ],
+    "showCriteriaForm": true
+  }
+]
