@@ -50,6 +50,13 @@ userGradeSelect.onchange = function() {
     else if (grade === '4') ages = [15, 16];
     else if (grade === '5') ages = [16, 17];
     userAgeSelect.innerHTML = '<option value="">Sélectionner l\'âge</option>' + ages.map(a => `<option value="${a}">${a}</option>`).join('');
+    gradingSection.innerHTML = '';
+};
+userGenderSelect.onchange = function() {
+    gradingSection.innerHTML = '';
+};
+userAgeSelect.onchange = function() {
+    gradingSection.innerHTML = '';
 };
 
 startBtn.onclick = function(e) {
