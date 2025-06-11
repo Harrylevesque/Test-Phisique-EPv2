@@ -1,0 +1,356 @@
+[
+  {
+    "name": "Saut En Longeur Sans Élan",
+    "criteria": [
+      {
+        "gender": "Girl",
+        "age": 12,
+        "criteria": "saut en longueur",
+        "maxScore": 179,
+        "scale": [
+          {
+            "min": 133,
+            "max": 155,
+            "points": 7
+          },
+          {
+            "min": 156,
+            "max": 170,
+            "points": 8
+          },
+          {
+            "min": 171,
+            "max": 178,
+            "points": 9
+          },
+          {
+            "min": 179,
+            "max": 179,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 13,
+        "criteria": "saut en longueur",
+        "maxScore": 184,
+        "scale": [
+          {
+            "min": 141,
+            "max": 162,
+            "points": 7
+          },
+          {
+            "min": 163,
+            "max": 175,
+            "points": 8
+          },
+          {
+            "min": 176,
+            "max": 183,
+            "points": 9
+          },
+          {
+            "min": 184,
+            "max": 184,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 12,
+        "criteria": "saut en longueur",
+        "maxScore": 183,
+        "scale": [
+          {
+            "min": 143,
+            "max": 163,
+            "points": 7
+          },
+          {
+            "min": 164,
+            "max": 175,
+            "points": 8
+          },
+          {
+            "min": 176,
+            "max": 182,
+            "points": 9
+          },
+          {
+            "min": 183,
+            "max": 183,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 13,
+        "criteria": "saut en longueur",
+        "maxScore": 200,
+        "scale": [
+          {
+            "min": 151,
+            "max": 176,
+            "points": 7
+          },
+          {
+            "min": 177,
+            "max": 192,
+            "points": 8
+          },
+          {
+            "min": 193,
+            "max": 199,
+            "points": 9
+          },
+          {
+            "min": 200,
+            "max": 200,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 14,
+        "criteria": "saut en lougueur",
+        "maxScore": 189,
+        "scale": [
+          {
+            "min": 145,
+            "max": 166,
+            "points": 7
+          },
+          {
+            "min": 167,
+            "max": 180,
+            "points": 8
+          },
+          {
+            "min": 181,
+            "max": 188,
+            "points": 9
+          },
+          {
+            "min": 189,
+            "max": 189,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 15,
+        "criteria": "saut en lougueur",
+        "maxScore": 188,
+        "scale": [
+          {
+            "min": 144,
+            "max": 157,
+            "points": 7
+          },
+          {
+            "min": 158,
+            "max": 180,
+            "points": 8
+          },
+          {
+            "min": 181,
+            "max": 187,
+            "points": 9
+          },
+          {
+            "min": 188,
+            "max": 188,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 16,
+        "criteria": "saut en lougueur",
+        "maxScore": 196,
+        "scale": [
+          {
+            "min": 147,
+            "max": 172,
+            "points": 7
+          },
+          {
+            "min": 173,
+            "max": 186,
+            "points": 8
+          },
+          {
+            "min": 187,
+            "max": 195,
+            "points": 9
+          },
+          {
+            "min": 196,
+            "max": 196,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Girl",
+        "age": 17,
+        "criteria": "saut en lougueur",
+        "maxScore": 198,
+        "scale": [
+          {
+            "min": 152,
+            "max": 173,
+            "points": 7
+          },
+          {
+            "min": 174,
+            "max": 189,
+            "points": 8
+          },
+          {
+            "min": 190,
+            "max": 197,
+            "points": 9
+          },
+          {
+            "min": 198,
+            "max": 198,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 14,
+        "criteria": "saut en lougueur",
+        "maxScore": 213,
+        "scale": [
+          {
+            "min": 166,
+            "max": 189,
+            "points": 7
+          },
+          {
+            "min": 190,
+            "max": 205,
+            "points": 8
+          },
+          {
+            "min": 206,
+            "max": 212,
+            "points": 9
+          },
+          {
+            "min": 213,
+            "max": 213,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 15,
+        "criteria": "saut en lougueur",
+        "maxScore": 223,
+        "scale": [
+          {
+            "min": 171,
+            "max": 201,
+            "points": 7
+          },
+          {
+            "min": 202,
+            "max": 214,
+            "points": 8
+          },
+          {
+            "min": 215,
+            "max": 222,
+            "points": 9
+          },
+          {
+            "min": 223,
+            "max": 223,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 16,
+        "criteria": "saut en lougueur",
+        "maxScore": 232,
+        "scale": [
+          {
+            "min": 191,
+            "max": 210,
+            "points": 7
+          },
+          {
+            "min": 211,
+            "max": 223,
+            "points": 8
+          },
+          {
+            "min": 224,
+            "max": 231,
+            "points": 9
+          },
+          {
+            "min": 232,
+            "max": 232,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      },
+      {
+        "gender": "Boy",
+        "age": 17,
+        "criteria": "saut en lougueur",
+        "maxScore": 238,
+        "scale": [
+          {
+            "min": 195,
+            "max": 219,
+            "points": 7
+          },
+          {
+            "min": 220,
+            "max": 230,
+            "points": 8
+          },
+          {
+            "min": 231,
+            "max": 237,
+            "points": 9
+          },
+          {
+            "min": 238,
+            "max": 238,
+            "points": 10
+          }
+        ],
+        "showScaleForm": true
+      }
+    ],
+    "showCriteriaForm": true
+  }
+]
