@@ -1,3 +1,4 @@
+
 // Remove all creation logic from this file. Only keep the grading system usage logic (upload, user selection, grading calculation).
 // --- Grading System Usage Page Logic ---
 let uploadedActivities = [];

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,30 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Calculateur de système de notation</h1>
-        <input type="file" id="upload-json" accept="application/json" style="margin-bottom:20px;">
-        <div id="user-form" style="display:none;margin-bottom:20px;">
-            <label>Année scolaire :
-                <select id="user-grade">
-                    <option value="">Sélectionner le niveau</option>
-                    <option value="1">Secondaire 1</option>
-                    <option value="2">Secondaire 2</option>
-                    <option value="3">Secondaire 3</option>
-                    <option value="4">Secondaire 4</option>
-                    <option value="5">Secondaire 5</option>
-                </select>
-            </label>
-            <label style="margin-left:10px;">Sexe :
-                <select id="user-gender"></select>
-            </label>
-            <label style="margin-left:10px;">Âge :
-                <select id="user-age"></select>
-            </label>
-            <button id="start-btn">Commencer</button>
-        </div>
-        <div id="grading-section"></div>
+<div class="container">
+    <h1>Calculateur de système de notation</h1>
+    <input type="file" id="upload-json" accept="application/json" style="margin-bottom:20px;">
+    <div id="user-form" style="display:none;margin-bottom:20px;">
+        <label>Année scolaire :
+            <select id="user-grade">
+                <option value="">Sélectionner le niveau</option>
+                <option value="1">Secondaire 1</option>
+                <option value="2">Secondaire 2</option>
+                <option value="3">Secondaire 3</option>
+                <option value="4">Secondaire 4</option>
+                <option value="5">Secondaire 5</option>
+            </select>
+        </label>
+        <label style="margin-left:10px;">Sexe :
+            <select id="user-gender"></select>
+        </label>
+        <label style="margin-left:10px;">Âge :
+            <select id="user-age"></select>
+        </label>
+        <button id="start-btn">Commencer</button>
     </div>
-    <script src="script.js"></script>
+    <div id="grading-section"></div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
